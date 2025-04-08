@@ -73,3 +73,10 @@ app.use('/assets', express.static(path.join(__dirname, '../assets')));
 - Seuls les fichiers du dossier `assets` sont exposés
 - Les autres dossiers du projet restent inaccessibles
 - En production, considérez l'utilisation d'un CDN pour les fichiers statiques
+
+######################################
+
+Rendu vidéo du projet : 
+https://youtu.be/gpaYVzdwOlg
+
+######################################
