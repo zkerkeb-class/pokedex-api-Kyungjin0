@@ -1,4 +1,3 @@
-// filepath: c:\Users\akrz3\Desktop\ING4\S2\Pokemon\BackEnd\pokedex-api-Kyungjin0\src\routes\pokemon.js
 import express from 'express';
 import Pokemon from '../models/Pokemon.js';
 import verifyToken from '../middleware/auth.js';
@@ -79,4 +78,4 @@ router.delete('/:id', verifyToken, async (req, res) => {
   }
 });
 
-export default router;
+export default router; 

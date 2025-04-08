@@ -2,17 +2,17 @@ import express from "express";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
-import { connectDB } from './utils/db.js';
+import { connectMongoDB } from './utils/mongodb.js';
 import { initializeAdmin } from './utils/initAdmin.js';
 import authRoutes from './routes/auth.js';
 import userRoutes from './routes/user.js';
-import pokemonRoutes from './routes/pokemon.js';
+import pokemonRoutes from './routes/pokemonRoutes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Connexion à MongoDB et initialisation de l'admin
-connectDB().then(async () => {
+connectMongoDB().then(async () => {
   await initializeAdmin();
 });
 

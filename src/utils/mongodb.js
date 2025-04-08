@@ -5,7 +5,7 @@ dotenv.config();
 
 const mongoURI = process.env.MONGO_URI;
 
-export const connectDB = async () => {
+export const connectMongoDB = async () => {
   try {
     await mongoose.connect(mongoURI, {
       dbname: "PokemonDB",
